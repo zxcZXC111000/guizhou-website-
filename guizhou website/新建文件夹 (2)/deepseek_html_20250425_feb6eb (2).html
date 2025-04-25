@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多彩贵州 - 我的家乡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin: 2rem 0;
+            color: #2c3e50;
+            font-family: "方正姚体", cursive;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .scenery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .food-grid, .scenery-grid {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#food">贵州美食</a></li>
+            <li><a href="#scenery">山水风光</a></li>
+            <li><a href="#culture">民族风情</a></li>
+            <li><a href="#economy">经济发展</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="container">
+        <h1 class="page-header">欢迎来到多彩贵州</h1>
+        <div class="card">
+            <img src="guizhou-banner.jpg" alt="贵州全景">
+            <div class="intro-grid">
+                <div class="intro-item">
+                    <h3>中国公园省</h3>
+                    <p>贵州位于中国西南部，素有"八山一水一分田"之说...</p>
+                </div>
+                <!-- 更多介绍区块 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食页面 -->
+    <section id="food" class="container">
+        <h2 class="page-header">贵州美食</h2>
+        <div class="food-grid">
+            <div class="card">
+                <img src="sour-soup-fish.jpg" alt="酸汤鱼">
+                <h3>酸汤鱼</h3>
+                <p>苗族传统美食，以番茄发酵制成酸汤...</p>
+            </div>
+            <!-- 更多美食卡片 -->
+        </div>
+    </section>
+
+    <!-- 风景页面 -->
+    <section id="scenery" class="container">
+        <h2 class="page-header">山水风光</h2>
+        <div class="scenery-grid">
+            <div class="card">
+                <img src="huangguoshu.jpg" alt="黄果树瀑布">
+                <h3>黄果树瀑布</h3>
+                <p>亚洲第一大瀑布，气势磅礴...</p>
+            </div>
+            <!-- 更多风景卡片 -->
+        </div>
+    </section>
+
+    <!-- 风俗页面 -->
+    <section id="culture" class="container">
+        <h2 class="page-header">民族风情</h2>
+        <div class="card">
+            <img src="miao-festival.jpg" alt="苗族节日">
+            <h3>苗族姊妹节</h3>
+            <p>被誉为"最古老的东方情人节"...</p>
+            <!-- 更多风俗内容 -->
+        </div>
+    </section>
+
+    <!-- 经济页面 -->
+    <section id="economy" class="container">
+        <h2 class="page-header">经济发展</h2>
+        <div class="card">
+            <h3>大数据中心</h3>
+            <p>贵阳已成为中国大数据产业重镇...</p>
+            <!-- 经济数据图表 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 多彩贵州 - 版权所有</p>
+    </footer>
+</body>
+</html>
